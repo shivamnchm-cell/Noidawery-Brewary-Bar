@@ -2,63 +2,452 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NOIDAWERY Brewery & Bar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NOIDAWERY | Brewery & Bar</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div id="splash"><img src="logo.png" alt="NOIDAWERY"></div>
+
+<!-- SPLASH -->
+
+<div id="splash">
+    <img src="logo.png" alt="">
+</div>
+
+<!-- HERO -->
 
 <section class="hero">
+
 <video autoplay muted loop playsinline>
-<source src="menu-video.mp4" type="video/mp4">
+    <source src="menu-video.mp4" type="video/mp4">
 </video>
-<div class="overlay">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
 <h1>NOIDAWERY</h1>
+
 <p>Brewery & Bar</p>
-<a href="#menu">Explore Menu ↓</a>
+
+<a href="#menu" class="btn">
+Explore Menu
+</a>
+
 </div>
+
 </section>
 
-<section id="menu" class="categories">
-<h2>Our Menu</h2>
-<div class="grid">
-<div class="card">Soups & Salads</div>
-<div class="card">Appetizers</div>
-<div class="card">Burgers & Sandwiches</div>
-<div class="card">Quesadillas</div>
-<div class="card">Burritos</div>
-<div class="card">Pizza</div>
-<div class="card">Pasta</div>
-<div class="card">Dim Sum</div>
-<div class="card">Bao</div>
-<div class="card">Sushi</div>
-<div class="card">Asian Cuisine</div>
-<div class="card">Tandoor Specials</div>
-<div class="card">Indian Mains</div>
-<div class="card">Biryani</div>
-<div class="card">Desserts</div>
-</div>
-</section>
+<!-- STICKY MENU -->
 
-<section class="menu-section">
-<h2>Featured Menu</h2>
-<ul>
-<li>Royal Tomato Shorba — ₹345</li>
-<li>Masala Peanuts — ₹375</li>
-<li>Classic Margherita Pizza — ₹615</li>
-<li>Chicken Xtreme Burger — ₹525</li>
-<li>Delhi Butter Chicken — ₹745</li>
-<li>Chicken Biryani — ₹625</li>
-<li>Tiramisu — ₹465</li>
-</ul>
+<nav class="category-nav">
+
+<a href="#soups">Soups</a>
+<a href="#appetizers">Appetizers</a>
+<a href="#burgers">Burgers</a>
+<a href="#quesadilla">Quesadilla</a>
+<a href="#burrito">Burrito</a>
+<a href="#pizza">Pizza</a>
+<a href="#pasta">Pasta</a>
+<a href="#dimsum">Dim Sum</a>
+<a href="#bao">Bao</a>
+<a href="#sushi">Sushi</a>
+<a href="#tandoor">Tandoor</a>
+<a href="#mains">Indian</a>
+<a href="#desserts">Desserts</a>
+
+</nav>
+
+<section id="menu">
+
+<!-- SOUPS -->
+
+<div class="menu-section" id="soups">
+
+<h2>Soups & Salads</h2>
+
+<div class="menu-card">
+<h3>Royal Tomato Shorba</h3>
+<span>₹345</span>
+<p>Tomato basil shorba with fresh tomato & basil leaves.</p>
+</div>
+
+<div class="menu-card">
+<h3>Oriental Manchow (Veg / Non-Veg)</h3>
+<span>₹345 / ₹375</span>
+<p>All time favourite manchow soup.</p>
+</div>
+
+<div class="menu-card">
+<h3>Californian Dream Delight</h3>
+<span>₹485</span>
+<p>Avocado, beetroot, cherry tomato, corn & feta cheese.</p>
+</div>
+
+<div class="menu-card">
+<h3>Caesar Salad (Veg / Non-Veg)</h3>
+<span>₹485 / ₹565</span>
+<p>Iceberg lettuce, olives, cherry tomato & Caesar dressing.</p>
+</div>
+
+</div>
+
+<!-- APPETIZERS -->
+
+<div class="menu-section" id="appetizers">
+
+<h2>Appetizers</h2>
+
+<div class="menu-card">
+<h3>Masala Peanuts</h3>
+<span>₹375</span>
+</div>
+
+<div class="menu-card">
+<h3>Spiced Kala Chana Chat</h3>
+<span>₹375</span>
+</div>
+
+<div class="menu-card">
+<h3>Rodeo Nachos</h3>
+<span>₹455</span>
+</div>
+
+<div class="menu-card">
+<h3>Bag Of Fries</h3>
+<span>₹515</span>
+</div>
+
+<div class="menu-card">
+<h3>Chicken Nuggets</h3>
+<span>₹635</span>
+</div>
+
+<div class="menu-card">
+<h3>Fish n Chips</h3>
+<span>₹735</span>
+</div>
+
+</div>
+
+<!-- BURGERS -->
+
+<div class="menu-section" id="burgers">
+
+<h2>Burgers & Sandwiches</h2>
+
+<div class="menu-card">
+<h3>Cheese Crunch Melt Burger</h3>
+<span>₹485</span>
+</div>
+
+<div class="menu-card">
+<h3>Cottage Club Supreme Sandwich</h3>
+<span>₹525</span>
+</div>
+
+<div class="menu-card">
+<h3>Chicken Xtreme Burger</h3>
+<span>₹525</span>
+</div>
+
+<div class="menu-card">
+<h3>Chicken Club Supreme Sandwich</h3>
+<span>₹595</span>
+</div>
+
+</div>
+<!-- QUESADILLA -->
+
+<div class="menu-section" id="quesadilla">
+
+<h2>Quesadilla</h2>
+
+<div class="menu-card">
+<h3>Fresh Mix Cottage Cheese Quesadilla</h3>
+<span>₹595</span>
+</div>
+
+<div class="menu-card">
+<h3>Roasted Veggies Quesadilla</h3>
+<span>₹595</span>
+</div>
+
+<div class="menu-card">
+<h3>Chicken Cheese Quesadilla</h3>
+<span>₹695 - ₹715</span>
+</div>
+
+</div>
+
+<!-- BURRITO -->
+
+<div class="menu-section" id="burrito">
+
+<h2>Burrito</h2>
+
+<div class="menu-card">
+<h3>Fresh Mix Cottage Cheese Burrito</h3>
+<span>₹595</span>
+</div>
+
+<div class="menu-card">
+<h3>Fresh Mix Chicken Cheese Burrito</h3>
+<span>₹625</span>
+</div>
+
+</div>
+
+<!-- PIZZA -->
+
+<div class="menu-section" id="pizza">
+
+<h2>Pizza</h2>
+
+<div class="menu-card"><h3>Classic Margherita</h3><span>₹615</span></div>
+
+<div class="menu-card"><h3>Veggie Venture Pizza Delight</h3><span>₹665</span></div>
+
+<div class="menu-card"><h3>Oven-Toasted Marvel Pizza</h3><span>₹665</span></div>
+
+<div class="menu-card"><h3>Chilli Paneer Pyro Pizza</h3><span>₹735</span></div>
+
+<div class="menu-card"><h3>Chicken Pizza</h3><span>₹735</span></div>
+
+<div class="menu-card"><h3>Savoury Slices Showdown Pizza</h3><span>₹735</span></div>
+
+<div class="menu-card"><h3>Mutton Seekh Supreme Pizza</h3><span>₹845</span></div>
+
+<div class="menu-card"><h3>All About Chicken Pizza</h3><span>₹895</span></div>
+
+</div>
+
+<!-- PASTA -->
+
+<div class="menu-section" id="pasta">
+
+<h2>Pasta</h2>
+
+<div class="menu-card">
+<h3>Arrabbiata Pasta</h3>
+<span>₹585 / ₹655</span>
+</div>
+
+<div class="menu-card">
+<h3>Alfredo Pasta</h3>
+<span>₹585 / ₹655</span>
+</div>
+
+<div class="menu-card">
+<h3>Pink Tango Pasta</h3>
+<span>₹585 / ₹655</span>
+</div>
+
+<div class="menu-card">
+<h3>Aglio e Olio</h3>
+<span>₹615 / ₹685</span>
+</div>
+
+</div>
+
+<!-- DIM SUM -->
+
+<div class="menu-section" id="dimsum">
+
+<h2>Dim Sum Basket</h2>
+
+<div class="menu-card"><h3>Desi Momos</h3><span>₹595 / ₹695</span></div>
+
+<div class="menu-card"><h3>Veg Crystal</h3><span>₹555</span></div>
+
+<div class="menu-card"><h3>Spicy Veg Dumpling</h3><span>₹555</span></div>
+
+<div class="menu-card"><h3>Golden Garlic Cream Cheese</h3><span>₹715</span></div>
+
+<div class="menu-card"><h3>Mushroom & Asparagus</h3><span>₹715</span></div>
+
+<div class="menu-card"><h3>Ginger Chicken</h3><span>₹695</span></div>
+
+<div class="menu-card"><h3>Prawn Hargow</h3><span>₹715</span></div>
+
+<div class="menu-card"><h3>Chilli Chicken Oily</h3><span>₹695</span></div>
+
+</div>
+
+<!-- BAO -->
+
+<div class="menu-section" id="bao">
+
+<h2>Baos Basket</h2>
+
+<div class="menu-card">
+<h3>Asian Cuisine Baozi</h3>
+<span>₹455</span>
+</div>
+
+<div class="menu-card">
+<h3>Mushroom Bao</h3>
+<span>₹595</span>
+</div>
+
+<div class="menu-card">
+<h3>Asian Chicken Baozi</h3>
+<span>₹695</span>
+</div>
+
+</div>
+
+<!-- SUSHI -->
+
+<div class="menu-section" id="sushi">
+
+<h2>Sushi</h2>
+
+<div class="menu-card"><h3>Asparagus Tempura</h3><span>₹765</span></div>
+
+<div class="menu-card"><h3>Summer Beetroot</h3><span>₹765</span></div>
+
+<div class="menu-card"><h3>Avocado Cream Cheese</h3><span>₹795</span></div>
+
+<div class="menu-card"><h3>Chicken Tempura</h3><span>₹875</span></div>
+
+<div class="menu-card"><h3>Black Forest Prawn</h3><span>₹945</span></div>
+
+<div class="menu-card"><h3>Prawn Avocado Salmon</h3><span>₹985</span></div>
+
+</div>
+<!-- TANDOOR -->
+
+<div class="menu-section" id="tandoor">
+
+<h2>Clay Oven (Tandoor)</h2>
+
+<div class="menu-card"><h3>Spicy Soya Delight</h3><span>₹565</span></div>
+
+<div class="menu-card"><h3>Flambe Paneer Tikka</h3><span>₹595</span></div>
+
+<div class="menu-card"><h3>Minty Paneer Tikka</h3><span>₹595</span></div>
+
+<div class="menu-card"><h3>Marvel Dahi Kebab</h3><span>₹615</span></div>
+
+<div class="menu-card"><h3>Tandoori Chicken (4 pcs)</h3><span>₹635</span></div>
+
+<div class="menu-card"><h3>Firecracker Chicken Tikka</h3><span>₹665</span></div>
+
+<div class="menu-card"><h3>Lasooni Dhaniya Murgh</h3><span>₹665</span></div>
+
+<div class="menu-card"><h3>Chandi Kaliyan</h3><span>₹695</span></div>
+
+<div class="menu-card"><h3>Fish Tikka Kuti Mirch</h3><span>₹725</span></div>
+
+<div class="menu-card"><h3>Mutton Seekh Kebab</h3><span>₹735</span></div>
+
+<div class="menu-card"><h3>Tandoori Masala Prawns</h3><span>₹1195</span></div>
+
+</div>
+
+<!-- ORIENTAL & CONTINENTAL -->
+
+<div class="menu-section">
+
+<h2>Oriental & Continental</h2>
+
+<div class="menu-card"><h3>Hakka Noodles</h3><span>₹395 / ₹445</span></div>
+
+<div class="menu-card"><h3>Fried Rice</h3><span>₹395 / ₹445</span></div>
+
+<div class="menu-card"><h3>Thai Curry</h3><span>₹555 / ₹625</span></div>
+
+<div class="menu-card"><h3>Grilled Cottage Cheese</h3><span>₹635</span></div>
+
+<div class="menu-card"><h3>Grilled Chicken</h3><span>₹485 / ₹585</span></div>
+
+<div class="menu-card"><h3>Pan Grilled Fish</h3><span>₹745</span></div>
+
+<div class="menu-card"><h3>Chicken Schezwan Sauce</h3><span>₹615</span></div>
+
+<div class="menu-card"><h3>Chicken Black Bean Sauce</h3><span>₹615</span></div>
+
+</div>
+
+<!-- INDIAN MAINS -->
+
+<div class="menu-section" id="mains">
+
+<h2>Indian Mains</h2>
+
+<div class="menu-card"><h3>Dal Makhani</h3><span>₹625</span></div>
+
+<div class="menu-card"><h3>Dal Fry / Tadka</h3><span>₹575</span></div>
+
+<div class="menu-card"><h3>Paneer Takatak</h3><span>₹625</span></div>
+
+<div class="menu-card"><h3>Kadhai Paneer</h3><span>₹625</span></div>
+
+<div class="menu-card"><h3>Mattar Mushroom</h3><span>₹595</span></div>
+
+<div class="menu-card"><h3>Mutton Rogan Josh</h3><span>₹755</span></div>
+
+<div class="menu-card"><h3>Delhi Butter Chicken</h3><span>₹745</span></div>
+
+<div class="menu-card"><h3>Chicken Curry</h3><span>₹745</span></div>
+
+<div class="menu-card"><h3>Lazeez Murgh Tikka Masala</h3><span>₹745</span></div>
+
+<div class="menu-card"><h3>Fish Curry</h3><span>₹725</span></div>
+
+</div>
+
+<!-- BIRYANI -->
+
+<div class="menu-section">
+
+<h2>Biryani</h2>
+
+<div class="menu-card"><h3>Vegetable Biryani</h3><span>₹525</span></div>
+
+<div class="menu-card"><h3>Chicken Biryani</h3><span>₹625</span></div>
+
+<div class="menu-card"><h3>Mutton Biryani</h3><span>₹725</span></div>
+
+</div>
+
+<!-- DESSERTS -->
+
+<div class="menu-section" id="desserts">
+
+<h2>Desserts</h2>
+
+<div class="menu-card"><h3>Gulab Jamun</h3><span>₹195</span></div>
+
+<div class="menu-card"><h3>Gulab-E-Gulkand</h3><span>₹235</span></div>
+
+<div class="menu-card"><h3>Walnut Brownie</h3><span>₹375</span></div>
+
+<div class="menu-card"><h3>Apple Pie</h3><span>₹465</span></div>
+
+<div class="menu-card"><h3>Tiramisu</h3><span>₹465</span></div>
+
+</div>
+
 </section>
 
 <footer>
-<img src="logo.png" alt="logo">
+
+<img src="logo.png" class="footer-logo">
+
 <h3>NOIDAWERY</h3>
+
 <p>Flavour of Noida in Every Bite</p>
+
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
