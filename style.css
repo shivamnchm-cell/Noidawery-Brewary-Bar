@@ -160,3 +160,47 @@ padding:50px 15px;
 }
 
 }
+.tagline{
+margin-bottom:40px;
+color:#d8d8d8;
+}
+
+.locations{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.location-card{
+background:
+rgba(255,255,255,.04);
+
+padding:30px;
+
+border-radius:18px;
+
+border:
+1px solid rgba(212,175,55,.2);
+
+backdrop-filter:blur(10px);
+
+transition:.3s;
+}
+
+.location-card:hover{
+transform:translateY(-5px);
+border-color:#D4AF37;
+}
+
+.location-card h4{
+color:#D4AF37;
+margin-bottom:15px;
+}
+
+.copyright{
+margin-top:50px;
+color:#999;
+}
