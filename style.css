@@ -52,9 +52,9 @@ height:100%;
 object-fit:cover;
 
 filter:
-brightness(0.105)
+brightness(0.90)
 contrast(0.95)
-saturate(0.75);
+saturate(0.90);
 }
 
 .hero-overlay{
@@ -318,6 +318,9 @@ background:rgba(0,0,0,.35);
 backdrop-filter:blur(18px);
 
 border:1px solid rgba(212,175,55,.25);
+border-radius:25px;
+z-index:-1;
+}
 
 .menu-card:hover{
 transform:translateY(-6px);
