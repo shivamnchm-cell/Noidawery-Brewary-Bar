@@ -52,9 +52,9 @@ height:100%;
 object-fit:cover;
 
 filter:
-brightness(0.130)
+brightness(0.120)
 contrast(0.125)
-saturate(0.100);
+saturate(0.95);
 }
 
 .hero-overlay{
