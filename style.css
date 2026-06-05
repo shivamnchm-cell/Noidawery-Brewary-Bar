@@ -52,7 +52,7 @@ height:100%;
 object-fit:cover;
 
 filter:
-brightness(0.110)
+brightness(0.130)
 contrast(0.110)
 saturate(0.100);
 }
