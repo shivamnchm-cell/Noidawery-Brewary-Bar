@@ -1,7 +1,15 @@
+document.querySelectorAll('.category-nav a').forEach(link=>{
 
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-a.addEventListener('click',e=>{
+link.addEventListener('click',e=>{
+
 e.preventDefault();
-document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+
+document.querySelector(
+link.getAttribute('href')
+).scrollIntoView({
+behavior:'smooth'
 });
+
+});
+
 });
